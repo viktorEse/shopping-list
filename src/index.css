@@ -94,7 +94,7 @@ input {
   position: absolute;
   top: 0;
   left: 50%;
-  padding: 0.3rem;
+  padding: 0.5rem;
   width: 40px;
   background-color: grey;
   border-bottom-left-radius: 10px;
@@ -204,7 +204,7 @@ input {
   top: 0;
   right: 0;
   width: fit-content;
-  padding: 0.3rem 0.5rem;
+  padding: 0.5rem;
   color: black;
   font-weight: 600;
   border-bottom-left-radius: 10px;
@@ -219,7 +219,7 @@ input {
   left: 0;
   background-color: grey;
   color: black;
-  padding: 0.3rem 0.5rem;
+  padding: 0.5rem;
   font-weight: 600;
   border-bottom-right-radius: 10px;
 }
