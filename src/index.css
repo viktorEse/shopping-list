@@ -1,0 +1,225 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  user-select: none;
+  font-family: "Open Sans", sans-serif;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.App {
+  min-height: 100vh;
+  background-color: rgb(241, 172, 44);
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+}
+
+.form-container {
+  width: 100%;
+  /* min-height: 60%; */
+  background-image: linear-gradient(90deg, rgb(24, 23, 23), rgb(36, 30, 30));
+  text-align: center;
+  padding: 4rem 1rem 1rem;
+  color: white;
+}
+
+.input-and-button {
+  position: relative;
+  width: 90%;
+  margin: 0 auto;
+}
+
+input {
+  width: 100%;
+  height: 2.4rem;
+  font-size: 1.2rem;
+  padding: 0 0.5rem;
+  font-weight: 600;
+}
+
+.add-item-btn {
+  cursor: pointer;
+  border: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: grey;
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.select-option-bar {
+  position: absolute;
+  left: 50%;
+  bottom: -90%;
+  transform: translateX(-50%);
+  border: 0;
+  padding: 0.3rem;
+  font-weight: 500;
+}
+
+.plus-icon-item {
+  position: relative;
+  font-size: 1.5rem;
+}
+
+.items {
+  padding: 3rem 1rem;
+  display: grid;
+  gap: 15px;
+}
+
+.trash-and-item-container {
+  display: grid;
+  grid-template-columns: 10% 1fr;
+  gap: 10px;
+  align-items: center;
+}
+
+.trash {
+  font-size: 1.5rem;
+}
+
+.trash-icon {
+  cursor: pointer;
+}
+
+.filter {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  padding: 0.3rem;
+  width: 40px;
+  background-color: grey;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.filter span {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.filter span::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 7px;
+  width: 28px;
+  height: 3px;
+  background-color: black;
+  transform: rotateZ(-45deg);
+}
+.filter-icon {
+  color: black;
+}
+
+.item-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 0.7rem;
+  border: 1px solid rgb(146, 146, 146);
+  gap: 15px;
+  overflow: hidden;
+}
+
+.complete-and-p {
+  /* outline: 1px solid red; */
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  overflow: hidden;
+}
+
+.completition {
+  cursor: pointer;
+  min-width: 18px;
+  min-height: 18px;
+  /* border-radius: 50%; */
+  background-color: white;
+  position: relative;
+}
+
+.check-icon {
+  width: 14px;
+  position: absolute;
+  left: 2px;
+  top: 2px;
+  color: black;
+  transform: rotateZ(-5deg);
+}
+
+.item-text {
+  font-size: 1rem;
+  word-wrap: break-word;
+  text-align: left;
+}
+
+.edit-name-icon {
+  cursor: pointer;
+  min-width: 20px;
+}
+
+.item-completed {
+  text-decoration: line-through;
+}
+
+.quantity-container {
+  /* outline: 1px solid red; */
+  min-width: 80px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.quantity-container > * {
+  flex-basis: 100%;
+}
+
+.quantity-counter {
+  min-width: 20px;
+  /* outline: 1px solid red; */
+}
+
+.quantity-icons {
+  min-width: 22px;
+  height: 20px;
+  /* outline: 1px solid red; */
+  cursor: pointer;
+}
+
+.clear-storage {
+  cursor: pointer;
+  text-align: left;
+  background-color: grey;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: fit-content;
+  padding: 0.3rem 0.5rem;
+  color: black;
+  font-weight: 600;
+  border-bottom-left-radius: 10px;
+}
+
+.edit {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: grey;
+  color: black;
+  padding: 0.3rem 0.5rem;
+  font-weight: 600;
+  border-bottom-right-radius: 10px;
+}
